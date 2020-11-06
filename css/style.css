@@ -1,0 +1,141 @@
+body{
+    font-size: 16px;
+    color:#fff;
+    background-color: #61122f;
+    box-sizing: border-box;
+
+}
+#header-nav{
+    background-color: #f6b319;
+    border-radius: 0;
+    border:0;
+  
+}
+#logo-img{
+    background: url(../images/chef.svg) no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin:10px 15px 10px 0;
+    
+}
+.navbar-brand{
+    padding-top: 25px;
+}
+.navbar-brand h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75em;
+}
+.navbar-brand a:hover,.navbar-brand a:focus{
+    text-decoration: none;
+}
+.navbar-brand p{
+    font-size: 1em;
+    color:#222;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+
+
+}
+.navbar-brand p img{
+    width:50px;
+    height:50px;
+}
+.navbar-brand p span{
+    vertical-align: middle;
+    
+}
+.navbar-collapse{
+    margin-top: 15px;
+} 
+.nav_icon{
+    width:50px;
+    height:50px;
+    color:#222;
+}
+.nav-link{
+    font-size: 1em;
+    font-weight: bold;
+    color:#61122f;
+
+}
+.nav-link:hover{
+    border-bottom:2px solid #61122f ;
+    color: #61122f;
+
+}
+#toggler-icon{
+    color:#61122f;
+    font-weight: bolder;
+    font-size: large;
+}
+.navbar-toggler span{
+    color:#61122f;
+}
+
+.nav-item:hover, .nav-toggler{
+    opacity: 50%;
+}
+#deco-design{
+    width:100%;
+    box-shadow: 0px 0px 50px #3f0c1f;
+}
+@media(min-width: 1200px){
+
+}
+@media(min-width:992px)and (max-width:1199px){
+
+    #logo-img{
+        background: url(../images/chef.svg) no-repeat;
+        background-size: contain;
+        width:100px;
+        height: 100px;
+        margin:15px 15px 5px 0;
+    }
+
+}
+@media(min-width:768)and (max-width:991px){
+    .nav-link{
+        font-size: .6em;
+    }
+    .nav_icon{
+        widows: 35px;
+        height:25px;
+        color:#222;
+    }
+}
+@media(max-width:767px){
+.navbar-brand{
+    padding-top:10px;
+    height:80px;
+}
+.navbar-brand h1{
+    padding-top: 10px;
+    font-size:5vw;
+}
+.navbar-brand p{
+    text-transform: uppercase;
+    font-size:.6em;
+    margin-top:12px;
+}
+.navbar-brand p img{
+    height:20px;
+}
+.nav-link{
+    font-size: .55em;
+}
+.nav_icon{
+    widows: 25px;
+    height:25px;
+    color:#222;
+    
+}
+}
