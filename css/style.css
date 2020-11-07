@@ -77,6 +77,9 @@ body{
     font-weight: bolder;
     font-size: large;
 }
+.navbar-toggler{
+    border: 1px solid #61122f;
+}
 .navbar-toggler span{
     color:#61122f;
 }
@@ -87,6 +90,72 @@ body{
 #deco-design{
     width:100%;
     box-shadow: 0px 0px 50px #3f0c1f;
+}
+
+#menu-tiles,#special-tiles,#map-tiles{
+    width:100%;
+    margin-bottom:15px;
+    height:30vh;
+    border: 2px solid #3f0c1f;
+    position: relative;
+    overflow: hidden;
+    
+}
+#menu-tiles:hover,#special-tiles:hover,#map-tiles:hover{
+    box-shadow:0px 1px 5px 1px #cccccc;
+}
+#home-tiles a:hover{
+    text-decoration: none;
+}
+#menu-tiles{
+    background: url(../images/chuu-menu.jpg) no-repeat;
+    
+    
+    background-size: cover;
+    background-origin: content-box;
+}
+#map-tiles iframe{
+    width:100%;
+    height:30vh;
+}
+#special-tiles{
+    background: url(../images/chuu-special.jpg) no-repeat;
+    
+    background-size: 100%;
+    background-origin: content-box;
+}
+#menu-tiles span,#special-tiles span,#map-tiles span{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width:100%;
+    text-align:center;
+    font-size:1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color:#fff;
+    opacity: .8;
+}
+#hours,#address{
+    line-height:2;
+}
+#hours>span ,address>span{
+    font-size:1.3em;
+}
+#address p{
+    color:#557c3e;
+    font-size:.8em;
+    line-height: 1.8;
+}
+#testimonials {
+    font-style: italic;
+}
+#testimonials p:nth-child(2){
+    margin-top: 25px;
+}
+section hr{
+    
+    background-color: #fff;
 }
 @media(min-width: 1200px){
 
@@ -119,7 +188,7 @@ body{
 }
 .navbar-brand h1{
     padding-top: 10px;
-    font-size:5vw;
+    font-size:1.5em;
 }
 .navbar-brand p{
     text-transform: uppercase;
@@ -138,4 +207,27 @@ body{
     color:#222;
     
 }
+#menu-tiles span,#special-tiles span,#map-tiles span{
+    font-size: 1em;
+}
+
+}
+@media(max-width:576px){
+
+    #menu-tiles,#special-tiles,#map-tiles{
+        width:80%;
+        margin:auto;
+        
+        
+    }
+    .panel-footer section{
+        margin-bottom: 30px;
+        text-align:center ;
+    }
+    .panel-footer section:nth-child(3){
+        margin-bottom: 0;
+    }
+    .panel-footer section hr{
+        width: 50%;
+    }
 }
